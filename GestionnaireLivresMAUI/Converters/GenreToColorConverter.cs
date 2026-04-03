@@ -8,11 +8,11 @@ namespace GestionnaireLivresMAUI.Converters
         {
             return value?.ToString() switch
             {
-                "Roman" => Color.FromArgb("#3B82F6"),   // Bleu
-                "SF" => Color.FromArgb("#8B5CF6"),      // Violet
-                "Fantasy" => Color.FromArgb("#22C55E"), // Vert
-                "Policier" => Color.FromArgb("#EF4444"),// Rouge
-                _ => Color.FromArgb("#6B7280"),         // Gris (Autre)
+                "Roman" => Color.FromArgb("#3B82F6"),
+                "SF" => Color.FromArgb("#8B5CF6"),
+                "Fantasy" => Color.FromArgb("#22C55E"),
+                "Policier" => Color.FromArgb("#EF4444"),
+                _ => Color.FromArgb("#6B7280"),
             };
         }
 

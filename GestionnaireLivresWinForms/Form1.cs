@@ -24,7 +24,7 @@ namespace GestionnaireLivresWinForms
         public Form1()
         {
             this.Text = "Gestionnaire de Livres";
-            this.Size = new Size(850, 500); // Fenêtre un peu plus large
+            this.Size = new Size(850, 500);
             this.StartPosition = FormStartPosition.CenterScreen;
 
             InitialiserInterface();
@@ -49,12 +49,10 @@ namespace GestionnaireLivresWinForms
 
             chkLu = new CheckBox { Text = "Lu ?", Location = new Point(120, 180), AutoSize = true };
 
-            // Boutons élargis à 100 et mieux espacés
             btnAjouter = new Button { Text = "Ajouter", Location = new Point(20, 230), Size = new Size(100, 35) };
             btnModifier = new Button { Text = "Modifier", Location = new Point(130, 230), Size = new Size(100, 35) };
             btnSupprimer = new Button { Text = "Supprimer", Location = new Point(240, 230), Size = new Size(100, 35), Enabled = false };
 
-            // ListBox élargie et ajout d'une barre de défilement horizontale au besoin
             lstLivres = new ListBox { Location = new Point(360, 20), Size = new Size(450, 400), HorizontalScrollbar = true };
 
             this.Controls.AddRange(new Control[] {

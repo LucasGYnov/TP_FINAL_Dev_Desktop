@@ -42,7 +42,6 @@ namespace GestionnaireLivresWPF.ViewModels
             {
                 if (SetProperty(ref _livreSelectionne, value) && value != null)
                 {
-                    // Remplissage du formulaire lors de la sélection
                     Titre = value.Titre;
                     Auteur = value.Auteur;
                     Annee = value.Annee;
@@ -60,7 +59,7 @@ namespace GestionnaireLivresWPF.ViewModels
             {
                 if (SetProperty(ref _termeRecherche, value))
                 {
-                    EffectuerRecherche(); // Recherche en temps réel
+                    EffectuerRecherche();
                 }
             }
         }
@@ -79,7 +78,7 @@ namespace GestionnaireLivresWPF.ViewModels
         public ICommand AjouterCommand { get; }
         public ICommand ModifierCommand { get; }
         public ICommand SupprimerCommand { get; }
-        public ICommand ExporterCsvCommand { get; } // Bonus 2
+        public ICommand ExporterCsvCommand { get; }
 
         public MainViewModel()
         {
@@ -110,12 +109,11 @@ namespace GestionnaireLivresWPF.ViewModels
 
         private void ActualiserListe()
         {
-            EffectuerRecherche(); // Charge tout si le terme de recherche est vide
+            EffectuerRecherche();
         }
 
         private void CalculerStatistiques()
         {
-            // On calcule sur la totalité de la base pour avoir des stats globales
             var tousLesLivres = _repository.GetAll();
             TotalLivres = tousLesLivres.Count;
             LivresLus = tousLesLivres.Count(l => l.Lu);
@@ -177,7 +175,7 @@ namespace GestionnaireLivresWPF.ViewModels
             LivreSelectionne = null;
         }
 
-        // --- Bonus 2 : Export CSV ---
+        // --- Bonus: eport CSV ---
         private void ExporterCsv()
         {
             try

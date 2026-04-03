@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GestionnaireLivresWinForms")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14a0bef4b5f7bcbe28799e3bdc944ea5a7d6d0cf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77c2763c21b43644b85e7ec7d92e983a372cc2c7")]
 [assembly: System.Reflection.AssemblyProductAttribute("GestionnaireLivresWinForms")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GestionnaireLivresWinForms")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

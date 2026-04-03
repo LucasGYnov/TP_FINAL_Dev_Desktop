@@ -1,69 +1,48 @@
-**[TP FINAL - Développement Desktop .NET (C#)]{.underline}**
+# TP FINAL - Développement Desktop .NET (C\#)
 
-**[PARTIE 1 --- WinForms :]{.underline}**
+## PARTIE 1 — WinForms :
 
-C1 :
+**C1 :**
+*Mini-description : Interface principale affichant une liste de 5 livres avec différents genres et statuts de lecture.*
 
-![](./captures/C1.png){width="3.937007874015748in"
-height="2.2132655293088366in"}
+**C2 :**
+*Mini-description : Fenêtre d'alerte listant les erreurs de validation groupées pour l'auteur, l'année et le genre.*
 
-C2 :
+**C3 :**
+*Mini-description : Formulaire de saisie rempli automatiquement après un double-clic sur un élément de la liste.*
 
-![](./captures/C2.png){width="3.937007874015748in"
-height="2.2132655293088366in"}
+-----
 
-C3 :
+## PARTIE 2 — WPF + SQLite : Application MVVM complète
 
-![](./captures/C3.gif){width="3.937007874015748in"
-height="2.2145669291338583in"}
+**C4 :**
+*Mini-description : Application WPF affichant les statistiques dynamiques (total, lus, %) et le bouton d'export CSV.*
 
-**[\]{.underline}**
+**C5 :**
+*Mini-description : Filtrage en temps réel de la base de données SQLite sur le terme "fan" dans le titre, l'auteur ou le genre.*
 
-**[PARTIE 2 --- WPF + SQLite : Application MVVM complète]{.underline}**
+**C6 :**
+*Mini-description : Sélection d'un livre dans le DataGrid et synchronisation immédiate avec le formulaire d'édition.*
 
-C4 :
+**C7 :**
+*Mini-description : Message de confirmation obligatoire avant toute suppression définitive d'un livre en base.*
 
-![](./captures/C4.png){width="3.937007874015748in"
-height="2.2132655293088366in"}
+**C8 :**
+*Mini-description : Preuve de la persistance des données SQLite après le redémarrage de l'application.*
 
-C5 :
+-----
 
-![](./captures/C5.png){width="3.937007874015748in"
-height="2.2132655293088366in"}
+## PARTIE 3 — MAUI : Application mobile-ready
 
-C6 :
+**C9 :**
+*Mini-description : Vue mobile avec CollectionView, badges colorés par genre et filtre "lus uniquement" activé.*
 
-![](./captures/C6.gif){width="3.937007874015748in"
-height="2.213997156605424in"}
+-----
 
-C7 :
+## PARTIE 4 — Bonus
 
-![](./captures/C7.png){width="3.937007874015748in"
-height="2.2132655293088366in"}
+**Réponse Q1 :** Les éléments manquants du RelayCommand sont : **ICommand**, **execute**, **true**, **CanExecuteChanged**.
 
-C8 :
-
-![](./captures/C8.gif){width="3.937007874015748in"
-height="2.0887150043744533in"}
-
-**[PARTIE 3 --- MAUI : Application mobile-ready (5
-points)]{.underline}**
-
-C9 :
-
-![](./captures/C9.gif){width="3.937007874015748in"
-height="2.2145669291338583in"}
-
-**[\]{.underline}**
-
-**[PARTIE 4 --- Bonus]{.underline}**
-
-**[Réponse Q1:]{.underline}** ICommand, execute, true, CanExecuteChanged
-
-**[Reponse Q2 :]{.underline}** Déjà intégré depuis le début.
-
-![](./captures/C4.png){width="3.937007874015748in"
-height="2.2132655293088366in"}
-
-![](./captures/C10.png){width="3.937007874015748in"
-height="2.2132655293088366in"}
+**Réponse Q2 :** La fonctionnalité d'exportation CSV est intégrée à la partie WPF.
+**C10 :**
+*Mini-description : Aperçu du contenu textuel du fichier "livres.csv" généré par l'application.*

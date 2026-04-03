@@ -2,7 +2,8 @@
 
 ## PARTIE 1 — WinForms
 
-**C1 :**
+**C1 :**![](./captures/C1.png)
+
 *Mini-description : Interface principale créée entièrement par code affichant la liste des livres et les contrôles de gestion.*
 
 **C2 :**

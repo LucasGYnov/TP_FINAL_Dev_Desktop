@@ -1,5 +1,41 @@
 # TP FINAL - Développement Desktop .NET (C\#)
 
+## Lucas GERARD
+
+
+---
+
+Pour cloner ton dépôt et te placer immédiatement dans le dossier racine du projet, utilise ces deux commandes dans ton terminal :
+```bash
+# 1. Cloner le dépôt
+git clone https://github.com/LucasGYnov/TP_FINAL_Dev_Desktop.git
+
+# 2. Entrer dans le dossier
+cd TP_FINAL_Dev_Desktop
+```
+
+## Instructions de lancement
+Pour exécuter les différents projets de cette solution, assurez-vous de posséder le **SDK .NET 10.0**[cite: 10]. Ouvrez un terminal à la racine de la solution et utilisez les commandes suivantes :
+### 1\. Partie WinForms
+```bash
+cd GestionnaireLivresWinForms
+dotnet run
+```
+### 2\. Partie WPF (Architecture MVVM & SQLite)
+
+```bash
+cd GestionnaireLivresWPF
+dotnet run
+```
+### 3\. Partie MAUI (Multi-plateforme)
+
+```bash
+cd GestionnaireLivresMAUI
+dotnet run -f net10.0-windows10.0.19041.0
+```
+
+---
+
 ## PARTIE 1 — WinForms
 
 **C1 :**![](./captures/C1.png)

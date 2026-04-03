@@ -1,0 +1,42 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:GestionnaireLivresMAUI.ViewModels"
+             xmlns:conv="clr-namespace:GestionnaireLivresMAUI.Converters"
+             x:Class="GestionnaireLivresMAUI.MainPage"
+             Title="Ma Bibliothèque MAUI">
+
+    <ContentPage.Resources>
+        <conv:GenreToColorConverter x:Key="GenreColorConv" />
+    </ContentPage.Resources>
+
+    <ContentPage.BindingContext>
+        <vm:MainViewModel />
+    </ContentPage.BindingContext>
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+            <Label Text="Afficher uniquement les lus" VerticalOptions="Center" />
+            <Switch IsToggled="{Binding AfficherUniquementLus}" />
+        </HorizontalStackLayout>
+
+        <CollectionView ItemsSource="{Binding LivresFiltrés}" SelectionMode="Single" SelectionChanged="OnSelectionChanged">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Margin="0,5" Padding="15" CornerRadius="10" HasShadow="True">
+                        <HorizontalStackLayout Spacing="15">
+                            <VerticalStackLayout WidthRequest="200">
+                                <Label Text="{Binding Titre}" FontSize="18" FontAttributes="Bold" />
+                                <Label Text="{Binding Auteur}" FontSize="14" TextColor="Gray" />
+                            </VerticalStackLayout>
+                            
+                            <Frame BackgroundColor="{Binding Genre, Converter={StaticResource GenreColorConv}}" 
+                                   Padding="10,2" CornerRadius="15" VerticalOptions="Center">
+                                <Label Text="{Binding Genre}" TextColor="White" FontSize="12" FontAttributes="Bold" />
+                            </Frame>
+                        </HorizontalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

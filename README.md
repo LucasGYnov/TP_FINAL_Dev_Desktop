@@ -1,48 +1,39 @@
 # TP FINAL - Développement Desktop .NET (C\#)
 
-## PARTIE 1 — WinForms :
+### PARTIE 1 — WinForms
+* **C1 :** `![Image C1](captures/C1.png)` 
+*Interface principale générée par code affichant la liste des livres et les contrôles de saisie.*
+* **C2 :** `![Image C2](captures/C2.png)` 
+*Démonstration de la validation stricte avec un MessageBox listant toutes les erreurs du formulaire.*
+* **C3 :** `![Image C3](captures/C3.gif)` 
+*Mode édition activé suite à un double-clic sur un livre, remplissant automatiquement les champs.*
 
-**C1 :**
-*Mini-description : Interface principale affichant une liste de 5 livres avec différents genres et statuts de lecture.*
+---
 
-**C2 :**
-*Mini-description : Fenêtre d'alerte listant les erreurs de validation groupées pour l'auteur, l'année et le genre.*
+### PARTIE 2 — WPF + SQLite
+* **C4 :** `![Image C4](captures/C4.png)`
+*Vue principale WPF utilisant le pattern MVVM avec affichage des statistiques dynamiques en bas de page.*
+* **C5 :** `![Image C5](captures/C5.png)`
+*Recherche en temps réel filtrant instantanément la liste sur le terme "fan".*
+* **C6 :** `![Image C6](captures/C6.gif)`
+*Formulaire de modification synchronisé avec le livre sélectionné dans le DataGrid.*
+* **C7 :** `![Image C7](captures/C7.png)`
+*Sécurité à la suppression via une demande de confirmation utilisateur.*
+* **C8 :** `![Image C8](captures/C8.gif)`
+*Vérification de la persistance des données dans le fichier SQLite après redémarrage.*
 
-**C3 :**
-*Mini-description : Formulaire de saisie rempli automatiquement après un double-clic sur un élément de la liste.*
+---
 
------
+### PARTIE 3 — MAUI
+* **C9 :** `![Image C9](captures/C9.gif)` 
+*Interface MAUI avec CollectionView, badges colorés par genre et filtre "Livres lus" fonctionnel.*
 
-## PARTIE 2 — WPF + SQLite : Application MVVM complète
+---
 
-**C4 :**
-*Mini-description : Application WPF affichant les statistiques dynamiques (total, lus, %) et le bouton d'export CSV.*
+### PARTIE 4 — Bonus
 
-**C5 :**
-*Mini-description : Filtrage en temps réel de la base de données SQLite sur le terme "fan" dans le titre, l'auteur ou le genre.*
+**Réponse Q1 :** Les termes manquants pour la classe RelayCommand sont : **ICommand**, **execute**, **true**, **CanExecuteChanged**.
+**Réponse Q2 :** La fonctionnalité d'export CSV est déjà intégrée au projet WPF dès le début du développement.
 
-**C6 :**
-*Mini-description : Sélection d'un livre dans le DataGrid et synchronisation immédiate avec le formulaire d'édition.*
-
-**C7 :**
-*Mini-description : Message de confirmation obligatoire avant toute suppression définitive d'un livre en base.*
-
-**C8 :**
-*Mini-description : Preuve de la persistance des données SQLite après le redémarrage de l'application.*
-
------
-
-## PARTIE 3 — MAUI : Application mobile-ready
-
-**C9 :**
-*Mini-description : Vue mobile avec CollectionView, badges colorés par genre et filtre "lus uniquement" activé.*
-
------
-
-## PARTIE 4 — Bonus
-
-**Réponse Q1 :** Les éléments manquants du RelayCommand sont : **ICommand**, **execute**, **true**, **CanExecuteChanged**.
-
-**Réponse Q2 :** La fonctionnalité d'exportation CSV est intégrée à la partie WPF.
-**C10 :**
-*Mini-description : Aperçu du contenu textuel du fichier "livres.csv" généré par l'application.*
+* **C10 :** `![Image C10](captures/C10.png)`
+*Aperçu du fichier "livres.csv" généré avec le format Titre;Auteur;Annee;Genre;Lu.*

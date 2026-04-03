@@ -1,0 +1,13 @@
+# Dossiers de compilation
+bin/
+obj/
+
+# Dossiers Visual Studio
+.vs/
+*.user
+*.userosxy
+*.sln.docstates
+
+# Fichiers de log et temporaires
+*.log
+.DS_Store
